@@ -13544,6 +13544,16 @@ public class Storefront {
         }
 
         /**
+         * A list of tags assigned to the customer.
+         * Additional access scope required: unauthenticated_read_customer_tags.
+         */
+        public CustomerQuery tags() {
+            startField("tags");
+
+            return this;
+        }
+
+        /**
         * A unique identifier for the customer.
         */
         public CustomerQuery id() {
