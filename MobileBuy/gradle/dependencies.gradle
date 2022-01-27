@@ -5,7 +5,8 @@ def versions = [
     jodaTimeVersion      : '2.9.9',
     butterKnifeVersion   : '9.0.0-SNAPSHOT',
     apolloVersion        : '1.0.1-SNAPSHOT',
-    archVersion          : '1.0.0'
+    archVersion          : '1.0.0',
+    graphQlSupport       : '0.2.1'
 ]
 
 ext.isCi = "true" == System.getenv('CI')
@@ -49,5 +50,6 @@ ext.dep = [
     archRuntime              : "android.arch.lifecycle:runtime:$versions.archVersion",
     archExt                  : "android.arch.lifecycle:extensions:$versions.archVersion",
     arcCompiler              : "android.arch.lifecycle:compiler:$versions.archVersion",
-    gson                     : "com.google.code.gson:gson:2.7"
+    gson                     : "com.google.code.gson:gson:2.7",
+    graphqlSupport           : "com.shopify.graphql.support:support:$versions.graphQlSupport"
 ]
